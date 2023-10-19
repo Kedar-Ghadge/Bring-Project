@@ -9,14 +9,11 @@ import { RecipeService } from '../../recipe.service';
 })
 export class RecipeItemComponent {
 @Input() recipe : Recipe
+@Input() index: number
 
 private recipeService : RecipeService
 constructor() {
   this.recipeService = inject(RecipeService)
 }
 
-  onRecipeSelect()
-  {
-    this.recipeService.eventSelectedRecipe.emit(this.recipe);
-  }
 }

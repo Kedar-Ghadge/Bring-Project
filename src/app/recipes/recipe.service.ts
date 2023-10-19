@@ -24,6 +24,11 @@ export class RecipeService
         [new Ingredient('sugar',2), new Ingredient('Milk', 100)])
       ];
 
+
+    getRecipe(id: number)
+    {
+        return this.recipes.slice()[id];
+    }
     getRecipes()
     {
         return this.recipes.slice();
