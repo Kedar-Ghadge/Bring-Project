@@ -6,11 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  selectedItem: string = 'recipe'
   
-  onNavigation(changedSelection: string)
-  {
-    this.selectedItem = changedSelection;
-  }
+
 }
