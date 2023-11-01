@@ -20,6 +20,8 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { AuthComponent } from './auth/auth/auth.component';
 import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
 import { AuthInterceptorService } from './auth/auth/auth-interceptor';
+import { AlertComponent } from './shared/alert/alert.component';
+import { PlaceHolder } from './shared/placeHolder/placeHolder';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { AuthInterceptorService } from './auth/auth/auth-interceptor';
     NoRecipeSelectedComponent,
     EditRecipeComponent,
     AuthComponent,
-    LoadingSpinnerComponent
+    LoadingSpinnerComponent,
+    AlertComponent,
+    PlaceHolder
   ],
   imports: [
     BrowserModule,
